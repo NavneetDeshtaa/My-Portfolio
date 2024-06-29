@@ -1,0 +1,110 @@
+@import "../../app.scss";
+
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 10; 
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+
+      @media only screen and (max-width: 1000px) {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        margin: 5px;
+        align-items: center;
+        text-align: center;
+      }
+
+
+      h2 {
+        font-size:37px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
+
+      h1 {
+        font-size: 88px;
+
+        @media only screen and (max-width: 1000px) {
+          font-size:44px;
+        }
+      }
+
+      .Resume-Btn {
+        position: relative; 
+        z-index: 20; 
+
+        .resume {
+          padding: 15px;
+          border: 1px solid white;
+          border-radius: 10px;
+          width: 200px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    @media only screen and (max-width: 1000px) {
+      height:58%;
+      width:94%;
+      top: unset;
+      bottom: 0;
+
+      img{
+        margin-left:30px;
+        margin-top:65px;
+      }
+    }
+
+    img {
+      width: 80%;
+      height: 77%;
+      margin-right: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      background:transparent;
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -50px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+    z-index: 5;
+  }
+}
