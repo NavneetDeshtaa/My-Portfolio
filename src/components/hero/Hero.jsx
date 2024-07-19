@@ -57,14 +57,6 @@ const Hero = () => {
             Web developer + ECE Enthausiast 
           </motion.h1>
 
-          <motion.div variants={textVariants} className="Resume-Btn">
-
-           <a href="https://drive.google.com/file/d/1oLYXsAfMxNmlqJkQZaYRlroaFEVRfOjj/view" target="_blank" rel="noopener noreferrer" >
-           <button className="resume">See Resume </button>
-           </a>
-            
-          </motion.div>
-
         </motion.div>
         
       </div>
